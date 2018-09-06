@@ -11,7 +11,7 @@ using namespace std;
 int open_file(){
   //Opening the file which will be read.
   ifstream myfile;
-  myfile.open("karate.txt");
+  myfile.open("karate.gml");
   //If the file is not opened, exits
   if(!myfile.is_open()){
     cout << "File doesnt exists, shutting down application" << endl;
@@ -30,9 +30,19 @@ int open_file(){
   return 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 int main(){
 open_file();
-
 
 return 0;
 }
