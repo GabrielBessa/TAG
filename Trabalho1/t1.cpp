@@ -6,6 +6,36 @@
 
 using namespace std;
 
+//1. Reading karate.zip files
+
+int open_file(){
+  //Opening the file which will be read.
+  ifstream myfile;
+  myfile.open("karate.txt");
+  //If the file is not opened, exits
+  if(!myfile.is_open()){
+    cout << "File doesnt exists, shutting down application" << endl;
+    return -1;
+  }else{
+    //Keeps reading the file until the last character.
+    while(true){
+      string mystring;
+      myfile >> mystring;
+      if(myfile.eof()){
+        break;
+      }
+    }
+  }
+  myfile.close();
+  return 0;
+}
+
+int main(){
+open_file();
+
+
+return 0;
+}
 
 
 
