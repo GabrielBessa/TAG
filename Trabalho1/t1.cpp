@@ -1,63 +1,35 @@
-// Study case of W. W. Zachary's Karate Club (1977)
-// For UnB - Theory and Application of Graphs, 2018/2
-// by Gabriel Bessa 16/0120811 and Andre Cassio  16/0xxxxxx
-
 #include <bits/stdc++.h>
+#include "parserProject1.h"
 
 using namespace std;
 
-//1. Reading karate.zip files
-
-int open_file(){
-  //Opening the file which will be read.
-  ifstream myfile;
-  myfile.open("karate.gml"); 
-  //If the file is not opened, exits
-  if(!myfile.is_open()){
-    cout << "File doesnt exists, shutting down application" << endl;
-    return -1;
-  }else{
-    //Keeps reading the file until the last character.
-    while(true){
-      string mystring;
-      myfile >> mystring;
-      if(myfile.eof()){
-        break;
-      }
+//Funcao que mostra os graus de um grafo, dado a lista de adjacencia desse grafo e o vetor de existencia dele.
+void Mostrar_Graus(vector<vector<int>> _graph, vector<bool> _node_exist)
+{
+  //Loop para acessar todos os possiveis nodes do grafo
+  for (int i = 0; i <= GRAPH_MAX_SIZE; i++)
+  {
+    //Checa a existencia daquele node
+    if (_node_exist[i])
+    {
+      //Printa o tamanho da lista naquele indice, que diz quantos outros nodes estao conectados a ele, logo, seu grau.
+      cout << "Grau do vertice " << i << " = " << graph[i].size() << endl;
     }
   }
-  myfile.close();
-  return 0;
 }
 
+int main()
+{
+  string arquivo;
 
+  cout << "Insira o nome do arquivo .gml para fazer a leitura do grafo" << endl;
 
+  cin >> arquivo;
 
-
-
-
-
-
-
-
-
-int main(){
-open_file();
-
-return 0;
+  if (Ler_Arquivo(arquivo + ".gml") != 1)
+  {
+    cout << "Programa Finalizado" << endl;
+    return 0;
+  }
+  Mostrar_Graus(graph, node_exist);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
