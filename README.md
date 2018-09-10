@@ -16,7 +16,7 @@ em escrever um programa em C/C++ que lê o arquivo (karate.zip), monta com esses
 não direcionado, sem pesos, usando listas de adjacências, e então calcular e imprimir como saída (tela)
 o seguinte:
 
-- [ ] O vértice, e seu respectivo grau (para todos os vértices);
-- [ ] Todos os cliques maximais (indicando o número de vértices e quais);
-- [ ] O Coeficiente de Aglomeração de cada vértice;
-- [ ] O Coeficiente médio de Aglomeração do Grafo.
+- [x] O vértice, e seu respectivo grau (para todos os vértices);
+- [x] Todos os cliques maximais (indicando o número de vértices e quais);
+- [x] O Coeficiente de Aglomeração de cada vértice;
+- [x] O Coeficiente médio de Aglomeração do Grafo.
