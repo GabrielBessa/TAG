@@ -19,4 +19,4 @@ o seguinte:
 - [x] O vértice, e seu respectivo grau (para todos os vértices);
 - [x] Todos os cliques maximais (indicando o número de vértices e quais);
 - [x] O Coeficiente de Aglomeração de cada vértice;
-- [x] O Coeficiente médio de Aglomeração do Grafo.
+- [x] O Coeficiente médio de Aglomeração do Grafo. 
