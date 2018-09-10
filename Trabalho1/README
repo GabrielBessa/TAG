@@ -1,0 +1,1 @@
+Para a compilação do nosso trabalho é necessário usar as seguintes flags: g++ -std=c++11 -o "Nome do arquivo final" "Nome do código fonte"
